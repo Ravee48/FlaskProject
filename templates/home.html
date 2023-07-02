@@ -1,0 +1,13 @@
+<html lang="en">
+
+<body>
+    {% if session %}
+    <div><prev>{{pretty}}</prev></div>
+    <p><a href="{{url_for('logout')}}">Log out from google</a></p>
+    {% else %}
+    <p><a href="{{url_for('googleLogin')}}">Login with google</a></p>
+    {% endif %}
+
+</body>
+
+</html>
